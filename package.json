@@ -1,0 +1,25 @@
+{
+  "name": "apollo-csb",
+  "description": "",
+  "dependencies": {
+    "apollo-server": "latest",
+    "graphql": "latest",
+    "graphql-tag": "latest"
+  },
+  "license": "MIT",
+  "main": "dist/server.js",
+  "scripts": {
+    "watch": "tsc -w",
+    "dev8": "yarn watch & node",
+    "dev": "npm run build:dev",
+    "build:dev": "nodemon 'src/server.ts' --exec 'ts-node' src/server.ts -e ts,graphql"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "nodemon": "latest",
+    "ts-node": "8.5.4",
+    "typescript": "3.7.4",
+    "@types/node": "latest",
+    "@types/graphql": "latest"
+  }
+}
